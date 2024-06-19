@@ -1,62 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Contact = () => {
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [message, setMessage] = useState('');
+const Portfolio = () => {
+  const projects = [
+    { title: 'Project 1', link: 'http://project1.com', repo: 'http://github.com/project1' },
+    { title: 'Project 2', link: 'http://project2.com', repo: 'http://github.com/project2' },
+    // Add more projects as needed
+  ];
 
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    if (name === 'email') {
-      setEmail(value);
-    } else if (name === 'name') {
-      setName(value);
-    } else if (name === 'message') {
-      setMessage(value);
-    }
-  };
-
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission logic here 
-    console.log('Form submitted with email:', email, 'name:', name, 'message:', message);
-    // Optionally clear form inputs
-    setEmail('');
-    setName('');
-    setMessage('');
-  }; 
- 
   return (
     <section>
-      <h2>Contact</h2>
-      <form onSubmit={handleFormSubmit}>
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Name"
-          required
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="Email"
-          required
-        />
-        <textarea
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          placeholder="Message"
-          required
-        />
-        <button type="submit">Submit</button>
-      </form>
+      <h2>Portfolio</h2>
+      <div className="projects">
+        {projects.map((project, index) => (
+          <div key={index} className="project">
+            <h3>{project.title}</h3>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href={project.repo} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
 
-export default Contact;
+export default Portfolio;

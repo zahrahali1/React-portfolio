@@ -1,25 +1,13 @@
-import React from "react";
+import React from 'react';
 
-export default function Header() {
-    return (
-        <header>
-            <h1>Developer's Name</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <NavLink exact to="/" activeClassName="active">About Me</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/contact" activeClassName="active">Contact</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/resume" activeClassName="active">Resume</NavLink>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    );
-}
+const Footer = () => {
+  return (
+    <footer>
+      <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://stackoverflow.com/users/your-profile" target="_blank" rel="noopener noreferrer">Stack Overflow</a>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -1,58 +1,69 @@
-import React, { useState } from "react";
-import "./style.css";
+import React, { useState } from 'react';
 
 const Contact = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [errors, setErrors] = useState({});
 
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    if (name === "email") {
-      setEmail(value);
-    } else if (name === "name") {
-      setName(value);
-    } else if (name === "message") {
-      setMessage(value);
+  const validateEmail = (email) => {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  };
+
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    if (!value) {
+      setErrors((prevErrors) => ({ ...prevErrors, [name]: 'This field is required' }));
+    } else if (name === 'email' && !validateEmail(value)) {
+      setErrors((prevErrors) => ({ ...prevErrors, email: 'Invalid email address' }));
+    } else {
+      setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
     }
   };
 
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    console.log("Form submitted with email:", email, "name:", name, "message:", message);
-    setEmail("");
-    setName("");
-    setMessage("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission
   };
 
   return (
     <section>
       <h2>Contact</h2>
-      <form onSubmit={handleFormSubmit}>
-        <input
-          value={name}
-          name="name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Name"
-          required
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="Email"
-          required
-        />
-        <textarea
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          placeholder="Message"
-          required
-        />
-        <button type="submit">Submit</button>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Name:
+          <input 
+            type="text" 
+            name="name" 
+            value={name} 
+            onChange={(e) => setName(e.target.value)} 
+            onBlur={handleBlur} 
+          />
+          {errors.name && <span className="error">{errors.name}</span>}
+        </label>
+        <label>
+          Email:
+          <input 
+            type="email" 
+            name="email" 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} 
+            onBlur={handleBlur} 
+          />
+          {errors.email && <span className="error">{errors.email}</span>}
+        </label>
+        <label>
+          Message:
+          <textarea 
+            name="message" 
+            value={message} 
+            onChange={(e) => setMessage(e.target.value)} 
+            onBlur={handleBlur} 
+          />
+          {errors.message && <span className="error">{errors.message}</span>}
+        </label>
+        <button type="submit">Send</button>
       </form>
     </section>
   );
