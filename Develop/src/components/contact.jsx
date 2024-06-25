@@ -7,8 +7,8 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
 
   const validateEmail = (email) => {
-    const re = /\S+@\S+\.\S+/;
-    return re.test(email);
+    const re = /\S+@\S+\.\S+/; 
+    return re.test(email); 
   };
 
   const handleBlur = (e) => {

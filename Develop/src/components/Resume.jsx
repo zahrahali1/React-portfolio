@@ -11,7 +11,7 @@ const Resume = () => {
         <li><img src="Tripclick.png" alt="Tripclick Project" /></li>
         <li><img src="Biblity.png" alt="Biblity Project" /></li>
       </ul>
-    </section>
+    </section>  
   );
 };
 

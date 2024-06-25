@@ -6,7 +6,7 @@ const Header = () => {
     <header>
       <h1>Developer's Name</h1>
       <nav>
-        <ul>
+        <ul> 
           <li>
             <NavLink exact to="/" activeClassName="active">About Me</NavLink>
           </li>

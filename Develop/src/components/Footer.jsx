@@ -9,6 +9,6 @@ const Footer = () => {
       <p>&copy; Zahrah </p>
     </footer>
   );
-};
+}; 
 
 export default Footer;

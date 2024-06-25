@@ -4,11 +4,11 @@ const Portfolio = () => {
   const projects = [
     { title: 'Project 1', link: 'http://project1.com', repo: 'http://github.com/project1' },
     { title: 'Project 2', link: 'http://project2.com', repo: 'http://github.com/project2' },
-    // Add more projects as needed
+    
   ];
 
-  return (
-    <section>
+  return ( 
+    <section> 
       <h2>Portfolio</h2>
       <div className="projects">
         {projects.map((project, index) => (
