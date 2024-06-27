@@ -36,7 +36,6 @@ const Portfolio = () => {
         ))}
       </div>
 
-      {/* CSS for styling */}
       <style jsx>{`
         .section-center {
           max-width: 800px;

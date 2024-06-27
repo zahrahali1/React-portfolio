@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
+      <img src="./public/images/avatar.jpg" alt="avatar" style={{ width: '50px', height: 'auto', borderRadius: '50%' }} />
       <h1>Zahrah Ali</h1>
       <nav>
         <ul>

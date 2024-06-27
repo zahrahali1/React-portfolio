@@ -20,15 +20,6 @@ header h1 {
   margin: 0;
 }
 
-.project-image {
-  height: auto;
-  max-width: 300px;
-  display: block;
-  margin-bottom: 10px;
-
-
-}
-
 nav ul {
   list-style: none;
   padding: 0;
@@ -61,6 +52,7 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+  border-top: 1px solid #fff; 
 }
 
 footer a {
@@ -77,6 +69,23 @@ section {
   padding: 20px;
 }
 
+.section-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid white;
+  background-color: white; 
+  color: #5d3387; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin: auto; 
+  margin-top: 50px; 
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -87,7 +96,6 @@ section {
   margin: 10px;
   padding: 20px;
 }
-
 
 .contact-section {
   display: flex;
@@ -144,22 +152,4 @@ section {
 .error {
   color: #7e57c2; 
   font-size: 14px;
-}
-
-
-.section-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border: 2px solid white;
-  background-color: white; 
-  color: #5d3387; 
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
-  margin: auto; 
-  margin-top: 50px; 
 }
