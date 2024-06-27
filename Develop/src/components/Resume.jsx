@@ -2,16 +2,23 @@ import React from 'react';
 
 const Resume = () => {
   return (
-    <section>
+    <section className="section-center">
       <h2>Resume</h2>
-      <a href="path_to_your_resume.pdf" download>Download Resume</a>
-      <h3>Proficiencies</h3>
+      <h3>Skills</h3>
       <ul>
-        <li><img src="MyFirstPortfolio.png" alt="My first portfolio" /></li>
-        <li><img src="Tripclick.png" alt="Tripclick Project" /></li>
-        <li><img src="Biblity.png" alt="Biblity Project" /></li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>CSS</li>
+        <li>HTML</li>
       </ul>
-    </section>  
+      <h3>Qualifications</h3>
+      <ul>
+        <li>GCSE - COMPUTING</li>
+        <li>Level 3 Cambridge Technical Diploma in IT - Northampton College</li>
+        <li>Full stack bootcamp - University of Birmingham</li>
+      </ul>
+    </section>
   );
 };
 

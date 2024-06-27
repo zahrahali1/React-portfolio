@@ -1,12 +1,12 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header>
-      <h1>Developer's Name</h1>
+      <h1>Zahrah Ali</h1>
       <nav>
-        <ul> 
+        <ul>
           <li>
             <NavLink exact to="/" activeClassName="active">About Me</NavLink>
           </li>

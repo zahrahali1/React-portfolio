@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './styles/App.css';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
@@ -11,15 +10,16 @@ import Resume from './components/Resume';
 const App = () => {
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <Header />
         <main>
-          <Switch>
-            <Route exact path="/" component={AboutMe} />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/resume" component={Resume} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
         </main>
         <Footer />
       </div>

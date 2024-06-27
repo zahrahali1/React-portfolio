@@ -2,20 +2,24 @@ import React from 'react';
 
 const Portfolio = () => {
   const projects = [
-    { title: 'Project 1', link: 'http://project1.com', repo: 'http://github.com/project1' },
-    { title: 'Project 2', link: 'http://project2.com', repo: 'http://github.com/project2' },
-    
+    { 
+      title: 'Project 1', 
+      image: './public/images/Project 1.png', 
+    },
+    { 
+      title: 'Project 2', 
+      image: '/images/Project 2.png',
+    },
   ];
 
-  return ( 
-    <section> 
+  return (
+    <section className="section-center">
       <h2>Portfolio</h2>
       <div className="projects">
         {projects.map((project, index) => (
           <div key={index} className="project">
             <h3>{project.title}</h3>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">Live Demo</a>
-            <a href={project.repo} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            <img src={project.image} alt={project.title} className="project-image" />
           </div>
         ))}
       </div>

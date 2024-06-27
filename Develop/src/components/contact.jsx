@@ -7,8 +7,8 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
 
   const validateEmail = (email) => {
-    const re = /\S+@\S+\.\S+/; 
-    return re.test(email); 
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
   };
 
   const handleBlur = (e) => {
@@ -28,9 +28,9 @@ const Contact = () => {
   };
 
   return (
-    <section>
-      <h2>Contact</h2>
-      <form onSubmit={handleSubmit}>
+    <section className="contact-section">
+      <h2>Contact Me</h2>
+      <form className="contact-form" onSubmit={handleSubmit}>
         <label>
           Name:
           <input 
