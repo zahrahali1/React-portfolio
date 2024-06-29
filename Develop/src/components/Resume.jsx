@@ -7,19 +7,19 @@ const Resume = () => {
       <div style={{ marginBottom: '20px' }}>
       <h2 style={{ marginBottom: '10px', fontWeight: 'bold' }}>Skills</h2>
         <ul style={{ paddingLeft: 0 }}>
-        <ul>JavaScript</ul>
-        <ul>React</ul>
-        <ul>Node.js</ul>
-        <ul>CSS</ul>
-        <ul>HTML</ul>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>CSS</li>
+        <li>HTML</li>
         </ul>
       </div>
       <div>
         <h2 style={{ marginBottom: '10px', fontWeight: 'bold' }}>Qualifications</h2>
         <ul style={{ paddingLeft: 0 }}>
-          <ul> GCSE - Computing</ul>
-          <ul>Level 3 Cambridge Technical Diploma in IT - Northampton College</ul>
-          <ul>Full stack bootcamp - University of Birmingham</ul>
+          <li> GCSE - Computing</li>
+          <li>Level 3 Cambridge Technical Diploma in IT - Northampton College</li>
+          <li>Full stack bootcamp - University of Birmingham</li>
         </ul>
       </div>
     </section>
