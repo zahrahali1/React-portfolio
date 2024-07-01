@@ -7,16 +7,13 @@
 
 
 ## Screenshot
-Here you have screenshots of my work I done so my first portfolio, the weather dashboard, the quiz challenge and the two projects I done. 
+Here you have screenshots of my portfolio so we have the about me page which is about me then we have the portfolio page where I have some of the weekly challenge and projects I've done, then you have a contact me page where you can contact me by filling out the contact form and for the final page you have a resume which has the skills and qualifications that I have learnt in the past and in this bootcamp.  
 
 
-
-![First Portfolio](https://github.com/zahrahali1/React-portfolio/raw/main/public/images/First%20Portfolio.png)
-![Weather Dashboard](https://github.com/zahrahali1/React-portfolio/raw/main/public/images/Weather%20Dashboard.png)
-![Quiz Challenge](https://github.com/zahrahali1/React-portfolio/raw/main/public/images/Quiz%20Challenge.png)
-![Project 1](https://github.com/zahrahali1/React-portfolio/raw/main/public/images/Project%201.png)
-![Project 2](https://github.com/zahrahali1/React-portfolio/raw/main/public/images/Project%202.png)
-
+![About Me](https://github.com/zahrahali1/React-portfolio/raw/main/public/images/About%20me.png)
+![Portfolio](https://github.com/zahrahali1/React-portfolio/raw/main/public/images/Portfolio%20.png)
+![Contact Me](https://github.com/zahrahali1/React-portfolio/raw/main/public/images/Contact%20me.png)
+![Resume](https://github.com/zahrahali1/React-portfolio/raw/main/public/images/Resume%201.png)
 
 
 ## Deployed Application
