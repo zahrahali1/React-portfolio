@@ -9,15 +9,14 @@
 ## Screenshot
 Here you have screenshots of my work I done so my first portfolio, the weather dashboard, the quiz challenge and the two projects I done. 
 
-![First Portfolio](public/images/First%20Portfolio.png)
-![Weather Dashboard](public/images/Weather%20Dashboard.png)
-![Quiz Challenge](public/images/Quiz%20Challenge.png)
-![Project 1](public/images/Project%201.png)
-![Project 2](public/images/Project%202.png)
+
+First Portfolio.png
+Weather Dashboard.png
+Quiz Challenge.png
+Project 1.png
+Project 2.png
+
 
 
 ## Deployed Application
 
-Deployed Application: 
-
-Github Repo: https://github.com/zahrahali1/React-portfolio
