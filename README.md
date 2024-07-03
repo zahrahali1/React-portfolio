@@ -17,4 +17,5 @@ Here you have screenshots of my portfolio so we have the about me page which is 
 ## Deployed Application
 
 Github Repo: https://github.com/zahrahali1/React-portfolio
+Deployed Application: https://main--fluffy-gumption-4e81e3.netlify.app/
 
