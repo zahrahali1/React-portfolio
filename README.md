@@ -20,5 +20,4 @@ Github Repo:
 https://github.com/zahrahali1/React-portfolio
 
 Deployed Application:
-https://main--fluffy-gumption-4e81e3.netlify.app/
-
+https://cheery-cajeta-1a9859.netlify.app/
